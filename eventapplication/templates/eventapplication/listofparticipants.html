@@ -16,28 +16,30 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
-            <h1 class="display-8">WORKSHOP ON BIG DATA</h1>
+             <h1 class="display-4">WORKING ON DANCE</h1>
+            <p class="lead">DANCE TO EXPRESS NOT TO IMPRESS</p>
+            <hr class="my-4">
         </div>
     </div>
-    <div class="container">
-        <table class="table  table-striped table-dark">
+    <div class="container" style=color:beige>
+        <table class="table  table-striped table-dark" style=color:beige>
             <thead>
                 <tr>
                     <th scope="col">Name</th>
-                    <th scope="col">Email </th>
+                    <th scope="col">Email</th>
                     <th scope="col">Contact number</th>
                     <th scope="col">Institute</th>
 
                 </tr>
             </thead>
             <tbody>
-                {% for col in participant %}
+                {% for col in Participants %}
 
                 <tr >
-                    <td> {{col.username}}</td>
+                    <td>{{col.username}}</td>
                     <td>{{col.email}}</td>
-                    <td>{{col.contnum}}</td>
-                    <td>{{col.inst}}</td>
+                    <td>{{col.phone}}</td>
+                    <td>{{col.institution}}</td>
 
                 </tr>
                 {% endfor %}
